@@ -144,5 +144,69 @@ This project is licensed under the MIT License.
 
 ---
 
-Siap dipake di GitHub 🚀🔥  
-Kalau mau gue tambahin **badge**, **installasi**, **screenshots**, atau **diagram arsitektur**, tinggal bilang aja Ghost!
+# 🧑‍💻 GitHub Collaboration Commands
+
+Berikut adalah command dasar Git & GitHub yang paling sering dipakai dalam kerja kelompok.
+
+---
+
+## 📥 1. Clone Repository (ambil project pertama kali)
+git clone https://github.com/username/nama-repo.git
+
+##🔀 2. Cek Status Perubahan
+git status
+
+##➕ 3. Add File ke Staging
+###Add semua file:
+git add .
+Add file tertentu:
+git add nama_file.ext
+
+##💬 4. Commit Perubahan
+git commit -m "pesan commit"
+
+##⬆️ 5. Push ke GitHub (upload perubahan)
+git push
+###Kalau pertama kali push branch baru:
+git push -u origin nama-branch
+
+##⬇️ 6. Pull Perubahan dari Teman (wajib sebelum mulai kerja)
+git pull
+
+###Pull branch tertentu:
+git pull origin nama-branch
+
+##🌿 7. Membuat Branch Baru
+git checkout -b nama-branch-baru
+
+##🔄 8. Pindah Branch
+git checkout nama-branch
+
+##🔀 9. Merge Branch (biasanya dilakukan oleh lead atau saat membuat PR)
+###Masuk ke branch tujuan, misal main:
+git checkout main
+git merge nama-branch
+
+##🗑️ 10. Hapus Branch
+###Hapus branch lokal:
+git branch -d nama-branch
+
+###Hapus branch di GitHub:
+git push origin --delete nama-branch
+
+##🧹 11. Reset File ke Versi Terakhir
+###Reset 1 file:
+git checkout -- nama_file.ext
+
+###Reset semua file yang belum di-commit:
+git reset --hard
+
+##🧩 12. Stash Perubahan (kalau mau pindah branch tapi belum commit)
+git stash
+
+###Balikin lagi:
+git stash pop
+
+##🛠️ 13. Konfigurasi Git (pertama kali install)
+git config --global user.name "Nama Kamu"
+git config --global user.email "emailkamu@example.com"
