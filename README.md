@@ -153,60 +153,92 @@ Berikut adalah command dasar Git & GitHub yang paling sering dipakai dalam kerja
 ## 📥 1. Clone Repository (ambil project pertama kali)
 git clone https://github.com/username/nama-repo.git
 
-##🔀 2. Cek Status Perubahan
+## 🔀 2. Cek Status Perubahan
+```bash
 git status
+```
 
-##➕ 3. Add File ke Staging
-###Add semua file:
+## ➕ 3. Add File ke Staging
+### Add semua file:
+```bash
 git add .
 Add file tertentu:
 git add nama_file.ext
+```
 
-##💬 4. Commit Perubahan
+## 💬 4. Commit Perubahan
+```bash
 git commit -m "pesan commit"
+```
 
-##⬆️ 5. Push ke GitHub (upload perubahan)
+## ⬆️ 5. Push ke GitHub (upload perubahan)
+```bash
 git push
-###Kalau pertama kali push branch baru:
+```
+
+### Kalau pertama kali push branch baru:
+```bash
 git push -u origin nama-branch
+```
 
-##⬇️ 6. Pull Perubahan dari Teman (wajib sebelum mulai kerja)
+## ⬇️ 6. Pull Perubahan dari Teman (wajib sebelum mulai kerja)
+```bash
 git pull
+```
 
-###Pull branch tertentu:
+### Pull branch tertentu:
+```bash
 git pull origin nama-branch
+```
 
-##🌿 7. Membuat Branch Baru
+## 🌿 7. Membuat Branch Baru
+```bash
 git checkout -b nama-branch-baru
+```
 
-##🔄 8. Pindah Branch
+## 🔄 8. Pindah Branch
+```bash
 git checkout nama-branch
+```
 
-##🔀 9. Merge Branch (biasanya dilakukan oleh lead atau saat membuat PR)
-###Masuk ke branch tujuan, misal main:
+## 🔀 9. Merge Branch (biasanya dilakukan oleh lead atau saat membuat PR)
+### Masuk ke branch tujuan, misal main:
+```bash
 git checkout main
 git merge nama-branch
+```
 
-##🗑️ 10. Hapus Branch
-###Hapus branch lokal:
+## 🗑️ 10. Hapus Branch
+### Hapus branch lokal:
+```bash
 git branch -d nama-branch
+```
 
-###Hapus branch di GitHub:
+### Hapus branch di GitHub:
+```bash
 git push origin --delete nama-branch
+```
 
-##🧹 11. Reset File ke Versi Terakhir
-###Reset 1 file:
+## 🧹 11. Reset File ke Versi Terakhir
+### Reset 1 file:
+```bash
 git checkout -- nama_file.ext
+```
 
-###Reset semua file yang belum di-commit:
+### Reset semua file yang belum di-commit:
+```bash
 git reset --hard
+```
 
-##🧩 12. Stash Perubahan (kalau mau pindah branch tapi belum commit)
+## 🧩 12. Stash Perubahan (kalau mau pindah branch tapi belum commit)
+```bash
 git stash
+```
 
-###Balikin lagi:
+
+### Balikin lagi:
 git stash pop
 
-##🛠️ 13. Konfigurasi Git (pertama kali install)
+## 🛠️ 13. Konfigurasi Git (pertama kali install)
 git config --global user.name "Nama Kamu"
 git config --global user.email "emailkamu@example.com"
